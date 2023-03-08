@@ -11,5 +11,6 @@ Pour exécuter un serveur web (apache, nginx, ...) dans un conteneur Docker, nou
 2.  Nous avons vérifié la presence de l'image httpd en local à l'aide de la commande `docker image ls`.
 ![Screenshot](ScreenShots/screenShotBash5B.png)
 3.  Nous avons créé un fichier index.html simple dans le dossier html.
-4.  Nous avons démarré un conteneur et servi la page HTML créée précédemment à l'aide d'un volume en utilisant la commande `docker run -d -p 8080:80 -v C:/Users/aymer/Desktop/docker/html/index.html:/usr/local/apache2/htdocs/index.html httpd` page html accessible sur http://localhost:8080.
+4.  Nous avons démarré un conteneur et servi la page HTML créée précédemment à l'aide d'un volume en utilisant la commande `docker run -d -p 8081:80 -v C:/Users/aymer/Desktop/docker/html/index.html:/usr/local/apache2/htdocs/index.html httpd` page html accessible sur http://localhost:8081.
 ![Screenshot](ScreenShots/screenShotBash5D.png)
+![Screenshot](ScreenShots/screenShotBash5DD.png)
