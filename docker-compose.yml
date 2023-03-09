@@ -16,6 +16,27 @@ services:
       PMA_HOST: mysql_container
     ports:
      - 8080:80
+  web:
+    networks:
+     - frontend
+     - backend
+    image: praqma/network-multitool
+    container_name: web
+    command: sleep infinity
+  app:
+    image: praqma/network-multitool
+    container_name: app
+    command: sleep infinity
+    networks:
+     - backend
+  db:
+    image: praqma/network-multitool
+    container_name: db
+    command: sleep
+    networks:
+     - frontend   
 
 networks:
     default_network:
+    frontend:
+    backend:
