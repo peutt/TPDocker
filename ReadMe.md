@@ -26,3 +26,8 @@ page html accessible sur http://localhost:8081.
 ----------------------------------------------------
 1. Après avoir remplis le dockerfile où l'on indique l'utilisation de la dernière version d'httpd et la commande pour copier le fichier html, on effectue la commande suivante à la racine du projet pour build l'image : `docker build -t my_siteweb -f dockerfile .`
 ![Screenshot](ScreenShots/screenShotBash6A.png)
+2. On effectue la commande docker run sur l'image crée sur le port 8081:80 : `docker run --name my_siteweb -d -p 8081:8
+0 my_siteweb`
+![Screenshot](ScreenShots/screenShotBash6B.png)
+page html accessible sur http://localhost:8081.
+![Screenshot](ScreenShots/screenShotBash5DD.png)
