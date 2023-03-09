@@ -31,3 +31,4 @@ page html accessible sur http://localhost:8081.
 ![Screenshot](ScreenShots/screenShotBash6B.png)
 page html accessible sur http://localhost:8081.
 ![Screenshot](ScreenShots/screenShotBash5DD.png)
+3. Les différences entre les procédures 5 et 6 sont que la procédure 5 utilise une image existante, tandis que la procédure 6 crée une nouvelle image à partir d'un Dockerfile. La procédure 6 offre plus de flexibilité et de contrôle sur l'image créée, alors que la procédure 5 est plus stable car cest une image fournis par docker hub.
