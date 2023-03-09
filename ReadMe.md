@@ -45,5 +45,7 @@ Ensuite, on se connecte sur phpmyadmin sur http://localhost:8080 grace au mot de
 
 8\. Utilisation de docker-compose
 ---------------------------------
+1. Nous avons utilisé un fichier docker-compose.yml pour créer les services et les réseaux.
 ![Screenshot](ScreenShots/screenShotBash8.png)
-Nous avons utilisé un fichier docker-compose.yml pour créer les services et les réseaux. Le fichier docker-compose.yml permet de définir et de lancer plusieurs conteneurs avec leurs dépendances en une seule commande (`docker-compose up -d` à l'emplacement du fichier docker-compose.yml). En outre, il permet de spécifier les volumes, les ports et les réseaux nécessaires pour chaque conteneur, simplifiant ainsi la gestion des conteneurs.
+Le fichier docker-compose.yml permet de définir et de lancer plusieurs conteneurs avec leurs dépendances en une seule commande (`docker-compose up -d` à l'emplacement du fichier docker-compose.yml). En outre, il permet de spécifier les volumes, les ports et les réseaux nécessaires pour chaque conteneur, simplifiant ainsi la gestion des conteneurs.
+2. Nous pouvons déclarer les mots de passe et autres dans environement pour le conteneur mysql dans le fichier docker-compose.yml
