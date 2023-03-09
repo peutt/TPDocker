@@ -35,4 +35,10 @@ page html accessible sur http://localhost:8081.
 
 7\. Utiliser une base de données dans un conteneur docker
 ----------------------------------------------------
-1. ![Screenshot](ScreenShots/screenShotBash7A.png)
+1. On récupères les images docker de mysql et phpmyadmin grace à la commande docker pull ![Screenshot](ScreenShots/screenShotBash7A.png)
+2. On lance les conteneurs mysql et phpmyadmin en renseignant :
+- les variables d'environements mysql (nom de la BDD et mot de passe) `docker run -d --name mysql_container -e MYSQL_ROOT_PASSWORD=Passw0rd -e MYSQL_DATABASE=tpdocker mysql`
+- la liaison entre phpmyadmin et mysql `docker run -d --name phpmyadmin --link mysql_container:db -p 8080:80 phpmyadmin`
+![Screenshot](ScreenShots/screenShotBash7B.png)
+Ensuite, on se connecte sur phpmyadmin sur http://localhost:8080 grace au mot de passe renseigné prècédement et à l'identifiant 'root' pour ajouter un table et une donnée exemple dans la base 'tpdocker mysql'.
+![Screenshot](ScreenShots/screenShotPhpmyadmin7B.png)
