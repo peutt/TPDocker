@@ -42,3 +42,8 @@ page html accessible sur http://localhost:8081.
 ![Screenshot](ScreenShots/screenShotBash7B.png)
 Ensuite, on se connecte sur phpmyadmin sur http://localhost:8080 grace au mot de passe renseigné prècédement et à l'identifiant 'root' pour ajouter un table et une donnée exemple dans la base 'tpdocker mysql'.
 ![Screenshot](ScreenShots/screenShotPhpmyadmin7B.png)
+
+8\. Utilisation de docker-compose
+---------------------------------
+![Screenshot](ScreenShots/screenShotBash8.png)
+Nous avons utilisé un fichier docker-compose.yml pour créer les services et les réseaux. Le fichier docker-compose.yml permet de définir et de lancer plusieurs conteneurs avec leurs dépendances en une seule commande (`docker-compose up -d` à l'emplacement du fichier docker-compose.yml). En outre, il permet de spécifier les volumes, les ports et les réseaux nécessaires pour chaque conteneur, simplifiant ainsi la gestion des conteneurs.

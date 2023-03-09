@@ -1,0 +1,21 @@
+---
+version: '3.9'
+services:
+  mysql_container:
+    networks:
+     - default_network
+    image: mysql
+    environment:
+     MYSQL_ROOT_PASSWORD: Passw0rd
+     MYSQL_DATABASE: tpdocker
+  phpmyadmin_container:
+    networks: 
+     - default_network
+    image: phpmyadmin
+    environment:
+      PMA_HOST: mysql_container
+    ports:
+     - 8080:80
+
+networks:
+    default_network:
